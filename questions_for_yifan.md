@@ -20,6 +20,10 @@
 
 5. **File layout.** Does the file layout in Section 4 of the notebook (`areas.csv`, `demand.csv`, `solar.csv`, `wind.csv`, then bus-level files) work for the model?
 
+6. **Small solar plants in the weights.** EIA-860 lists 42.9 GW of solar in the Eastern Interconnection. In PJM, MISO and ISO-NE, the reported solar output is only 4-10% of that capacity, against 20-24% in the Southeast. Many small (1-5 MW) plants there are on the local distribution grid and may not be counted in the ISO's solar total. Should the solar weights use all plants, or only larger ones (for example 10 MW and up)?
+
+   ![Solar and wind plants in the Eastern Interconnection](figures/eia860_eastern_solar_wind.png)
+
 ## Data used so far
 
 | Data | Source | Link |
