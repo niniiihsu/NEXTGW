@@ -16,7 +16,7 @@
 
    Source: PJM Data Miner 2, [Solar Generation by Area](https://dataminer2.pjm.com/feed/solar_gen) and [Wind Generation by Area](https://dataminer2.pjm.com/feed/wind_gen), hourly, 2023. The sixth area, RFC, is MIDATL + WEST.
 
-4. **Rooftop solar.** EIA-860, which we use to place solar capacity at buses, only lists plants of 1 MW or more, so most rooftop solar is missing. Is that acceptable, or should we account for it?
+4. **Rooftop solar.** EIA-860, which we use to place solar capacity at buses, only lists plants of 1 MW or more, so most rooftop solar is missing. Is that acceptable, or should we account for it? Related: NYISO does not report its solar to EIA at all, and the only NYISO solar data by zone is its estimate of rooftop (behind-the-meter) solar. Should we use that for New York, or leave New York solar out for now?
 
 5. **File layout.** Does the file layout in Section 4 of the notebook (`areas.csv`, `demand.csv`, `solar.csv`, `wind.csv`, then bus-level files) work for the model?
 
